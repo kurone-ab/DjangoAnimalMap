@@ -17,11 +17,11 @@
 </head>
 <body>
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-md">
-    <h5 class="my-0 mr-md-auto font-weight-normal">goyangibab</h5>
+    <a class="my-0 mr-md-auto font-weight-normal" href="{% url 'home' %}">goyangibab</a>
     <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">로그인</a>
+        <a class="p-2 text-dark" href="{% url 'login' %}">로그인</a>
     </nav>
-    <a class="btn btn-outline-primary" href="#">회원가입</a>
+    <a class="btn btn-outline-primary" href="{% url 'signup' %}">회원가입</a>
 </div>
 {% block main %}
 {% endblock %}
